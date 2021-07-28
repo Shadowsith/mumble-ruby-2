@@ -177,7 +177,7 @@ module Mumble
     def version_exchange
       send_version({
         version: encode_version(1, 2, 10),
-        release: "mumble-ruby #{Mumble::VERSION}",
+        release: "mumble-ruby2 #{Mumble::VERSION}",
         os: %x{uname -s}.strip,
         os_version: %x{uname -v}.strip
       })
